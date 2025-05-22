@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal view test</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Modal 1 -->
+    <div class="modal" id="modal-1">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>Project 1</h1>
+          <div class="tech-stack">
+            <span>HTML/CSS</span>
+            <span>Ruby on Rails</span>
+            <span>JavaScript</span>
+          </div>
+          <button class="close-modal">&times</button>
+        </div>
+        <div class="slider-container">
+          <div class="image-wrapper">
+            <div class="navigation prev-image">&lt;</div>
+            <img
+              src="./images/modal-1/Rectangle 39.png"
+              class="main-image"
+              id="mainImage1"
+            />
+            <div class="navigation next-image">&gt;</div>
+          </div>
+          <div class="thumbnails">
+            <img
+              src="./images/modal-1/Rectangle 39.png"
+              class="thumbnail active"
+            />
+            <img src="./images/modal-1//Rectangle 40.png" class="thumbnail" />
+            <img src="./images/modal-1/Rectangle 41.png" class="thumbnail" />
+            <img src="./images/modal-1/Rectangle 42.png" class="thumbnail" />
+          </div>
+        </div>
+        <div class="about-project-modal">
+          <p>
+            Project 1 description: Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+          <span class="span-modal-live"
+            ><a href="">see live <img src="./images/ic_link.png" alt="" /></a
+          ></span>
+          <span class="span-modal-github"
+            ><a href="">see source <img src="./images/ic_github.png" /></a
+          ></span>
+        </div>
+        <div class="btn-container">
+          <button class="btn-modal btn-modal-1" id="prev-modal" disabled>
+            &lt;&mdash;prev project
+          </button>
+          <button class="btn-modal btn-modal-2" id="next-modal">
+            next project &mdash;&gt;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal-2">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>Project 2</h1>
+          <div class="tech-stack">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+          </div>
+          <button class="close-modal">&times</button>
+        </div>
+        <div class="slider-container">
+          <div class="image-wrapper">
+            <div class="navigation prev-image">&lt;</div>
+            <img
+              src="./images/modal-2/Lasagna.jpg"
+              class="main-image"
+              id="mainImage2"
+            />
+            <div class="navigation next-image">&gt;</div>
+          </div>
+          <div class="thumbnails">
+            <img src="./images/modal-2/Lasagna.jpg" class="thumbnail active" />
+            <img
+              src="./images/modal-2/pexels-charlotte-may-5946615.jpg"
+              class="thumbnail"
+            />
+            <img
+              src="./images/modal-2/pexels-orlovamaria-4915835.jpg"
+              class="thumbnail"
+            />
+            <img src="./images/modal-2/Piña Colada.jpg" class="thumbnail" />
+          </div>
+        </div>
+        <div class="about-project-modal">
+          <p>
+            Project 2 description: Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+          <span class="span-modal-live"
+            ><a href="">see live <img src="./images/ic_link.png" alt="" /></a
+          ></span>
+          <span class="span-modal-github"
+            ><a href="">see source <img src="./images/ic_github.png" /></a
+          ></span>
+        </div>
+        <div class="btn-container">
+          <button class="btn-modal btn-modal-1" id="prev-modal">
+            &lt;&mdash;prev project
+          </button>
+          <button class="btn-modal btn-modal-2" id="next-modal">
+            next project &mdash;&gt;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal-3">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>Project 3</h1>
+          <div class="tech-stack">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>Node.js</span>
+          </div>
+          <button class="close-modal">&times</button>
+        </div>
+        <div class="slider-container">
+          <div class="image-wrapper">
+            <div class="navigation prev-image">&lt;</div>
+            <img
+              src="./images/modal-3/Margherita Pizza.jpg"
+              class="main-image"
+              id="mainImage3"
+            />
+            <div class="navigation next-image">&gt;</div>
+          </div>
+          <div class="thumbnails">
+            <img
+              src="./images/modal-3/Margherita Pizza.jpg"
+              class="thumbnail active"
+            />
+            <img src="./images/modal-3/Mojito.jpg" class="thumbnail" />
+            <img
+              src="./images/modal-3/pexels-timur-weber-8679154.jpg"
+              class="thumbnail"
+            />
+            <img src="./images/modal-3/Pisco Sour.jpg" class="thumbnail" />
+          </div>
+        </div>
+        <div class="about-project-modal">
+          <p>
+            Project 3 description: Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+          <span class="span-modal-live"
+            ><a href="">see live <img src="./images/ic_link.png" alt="" /></a
+          ></span>
+          <span class="span-modal-github"
+            ><a href="">see source <img src="./images/ic_github.png" /></a
+          ></span>
+        </div>
+        <div class="btn-container">
+          <button class="btn-modal btn-modal-1" id="prev-modal">
+            &lt;&mdash;prev project
+          </button>
+          <button class="btn-modal btn-modal-2" id="next-modal">
+            next project &mdash;&gt;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal" id="modal-4">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>Project 4</h1>
+          <div class="tech-stack">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>MongoDB</span>
+          </div>
+          <button class="close-modal">&times</button>
+        </div>
+        <div class="slider-container">
+          <div class="image-wrapper">
+            <div class="navigation prev-image">&lt;</div>
+            <img
+              src="./images/modal-4/Cheeseburger.jpg"
+              class="main-image"
+              id="mainImage4"
+            />
+            <div class="navigation next-image">&gt;</div>
+          </div>
+          <div class="thumbnails">
+            <img
+              src="./images/modal-4/Cheeseburger.jpg"
+              class="thumbnail active"
+            />
+            <img src="./images/modal-4/Fried Chicken.jpg" class="thumbnail" />
+            <img src="./images/modal-4/Cola.jpg" class="thumbnail" />
+            <img src="./images/modal-4/Milkshake.jpg" class="thumbnail" />
+          </div>
+        </div>
+        <div class="about-project-modal">
+          <p>
+            Project 4 description: Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+          <span class="span-modal-live"
+            ><a href="">see live <img src="./images/ic_link.png" alt="" /></a
+          ></span>
+          <span class="span-modal-github"
+            ><a href="">see source <img src="./images/ic_github.png" /></a
+          ></span>
+        </div>
+        <div class="btn-container">
+          <button class="btn-modal btn-modal-1" id="prev-modal">
+            &lt;&mdash;prev project
+          </button>
+          <button class="btn-modal btn-modal-2" id="next-modal" disabled>
+            next project &mdash;&gt;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

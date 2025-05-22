@@ -1,0 +1,127 @@
+""<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f7f7f7;
+        margin: 0;
+      }
+      .slider-container {
+        width: 600px;
+        text-align: center;
+        position: relative;
+      }
+      .image-wrapper {
+        position: relative;
+      }
+      .main-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .navigation {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+        user-select: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+      }
+      .prev {
+        left: 10px;
+      }
+      .next {
+        right: 10px;
+      }
+      .navigation:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .thumbnails {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+      .thumbnail {
+        width: 140px;
+        height: 80px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 5px;
+        opacity: 0.6;
+      }
+      .thumbnail.active {
+        opacity: 1;
+        border: 2px solid #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="image-wrapper">
+        <div class="navigation prev">&lt;</div>
+        <img
+          src="./images/Cheeseburger.jpg"
+          class="main-image"
+          id="mainImage"
+        />
+        <div class="navigation next">&gt;</div>
+      </div>
+      <div class="thumbnails">
+        <img src="./images/Cheeseburger.jpg" class="thumbnail active" />
+        <img src="./images/Fried Chicken.jpg" class="thumbnail" />
+        <img src="./images/Iced Tea.jpg" class="thumbnail" />
+        <img src="./images/Milkshake.jpg" class="thumbnail" />
+      </div>
+    </div>
+
+    <script>
+      const mainImage = document.getElementById("mainImage");
+      const thumbnails = document.querySelectorAll(".thumbnail");
+      const prev = document.querySelector(".prev");
+      const next = document.querySelector(".next");
+      let currentIndex = 0;
+
+      const updateMainImage = (index) => {
+        thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+        thumbnails[index].classList.add("active");
+        mainImage.src = thumbnails[index].src;
+      };
+
+      thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener("click", () => {
+          currentIndex = index;
+          updateMainImage(index);
+        });
+      });
+
+      prev.addEventListener("click", () => {
+        currentIndex =
+          (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+        updateMainImage(currentIndex);
+      });
+
+      next.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % thumbnails.length;
+        updateMainImage(currentIndex);
+      });
+    </script>
+  </body>
+</html>
+""
