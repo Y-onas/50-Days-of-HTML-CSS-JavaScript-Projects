@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=ubuntu");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ubuntu", sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+.bg {
+  background: url("pexels-timur-weber-8679358.jpg") no-repeat center center /
+    cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px);
+}
+.loading-text {
+  font-size: 50px;
+  color: #888;
+}
