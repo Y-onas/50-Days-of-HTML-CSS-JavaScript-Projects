@@ -6,5 +6,5 @@ open.addEventListener("click", () => {
   container.classList.add("show-nav");
 });
 close.addEventListener("click", () => {
-  close.style.top = 0;
+  container.classList.remove("show-nav");
 });
